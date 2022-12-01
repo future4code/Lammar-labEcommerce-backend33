@@ -1,6 +1,17 @@
 import { Request, Response } from "express";
-import { characters } from "../data";
+import connection from "../connection";
+import { character } from "../type";
 
-export default function (req: Request, res: Response) {
-  res.send(characters);
+export default async function getAllCharacters(
+  req: Request,
+  res: Response
+): Promise<void> {
+  try {
+    // const name = req.query;
+
+    const characters: character[] = await connection("character");
+    res.send(characters);
+  } catch (error) {
+    res.status(500).send("Unexpected server error");
+  }
 }

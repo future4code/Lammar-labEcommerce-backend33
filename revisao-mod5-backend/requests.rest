@@ -11,3 +11,7 @@ Content-Type: application/json
     "description": "O irmão do prof X!!!"
 
 }
+
+###
+
+DELETE http://localhost:3003/character/3
