@@ -16,8 +16,14 @@ const connection_1 = __importDefault(require("../connection"));
 function getAllCharacters(req, res) {
     return __awaiter(this, void 0, void 0, function* () {
         try {
-            // const name = req.query;
-            const characters = yield (0, connection_1.default)("character");
+            const { name, orderBy, orderType, page } = req.query;
+            const resultsPerPage = 5;
+            const offset = resultsPerPage + (Number(page) - 1);
+            debugger;
+            const characters = yield (0, connection_1.default)("character")
+                .where("name", "LIKE", `%${name}%`)
+                .orderBy(orderBy || "name", orderType)
+                .offset(offset);
             res.send(characters);
         }
         catch (error) {
