@@ -1,6 +1,6 @@
 # labEcommerce-backend
 
-## Esta API Tem o intuito de facilitar a vida de quem procura e necessita pegar dados e informações sobre ...
+## Esta API Tem o intuito de facilitar a vida de quem procura e necessita pegar dados e informações sobre Filmes e personagens.
 
 ### Link da Documentação
 
@@ -11,9 +11,7 @@
 
 ### O que Funciona 
 
-##### Endpoints GET(getAllCharacters), POST(createCharacter)
-
-### O que Não Funciona
+##### Endpoints GET(getAllCharacters), PUT(createCharacter), DELETE(deleteCharacter)
 
 ##### 
 
