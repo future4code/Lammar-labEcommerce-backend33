@@ -4,7 +4,8 @@
 
 ### Link da Documentação
 
-#### []()
+#### [API](https://documenter.getpostman.com/view/22349865/2s8YzL3RGE)
+#### [Deploy](https://modulo5-revisao.onrender.com)
 
 ##
 
