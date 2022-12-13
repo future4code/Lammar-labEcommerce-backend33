@@ -1,8 +1,8 @@
-GET http://localhost:3003/character?name=o&orderType=DESC
+GET https://modulo5-revisao.onrender.com/character?name=o&orderType=DESC
 
 ###
 
-PUT http://localhost:3003/character
+PUT https://modulo5-revisao.onrender.com/character
 Content-Type: application/json
 
 {
@@ -14,4 +14,4 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:3003/character/6
+DELETE https://modulo5-revisao.onrender.com/character/8
