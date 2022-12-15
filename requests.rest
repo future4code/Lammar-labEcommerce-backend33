@@ -1,0 +1,17 @@
+GET https://modulo5-revisao.onrender.com/character?name=o&orderType=DESC
+
+###
+
+PUT https://modulo5-revisao.onrender.com/character
+Content-Type: application/json
+
+{
+    "name": "Juggernaut",
+    "gender": "MALE",
+    "description": "O irmão do prof X!!!"
+
+}
+
+###
+
+DELETE https://modulo5-revisao.onrender.com/character/8
